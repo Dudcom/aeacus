@@ -20,7 +20,7 @@ import (
 type check struct {
 	Message string
 	Hint    string
-	Points  int
+	Points  float64
 
 	Fail         []cond
 	Pass         []cond
