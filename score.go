@@ -24,9 +24,9 @@ var (
 type imageData struct {
 	Contribs    int
 	Detracts    int
-	Score       int
+	Score       float64  
 	ScoredVulns int
-	TotalPoints int
+	TotalPoints float64  
 	Penalties   []scoreItem
 	Points      []scoreItem
 	Hints       []hintItem
@@ -49,7 +49,7 @@ type connData struct {
 type scoreItem struct {
 	Index   int
 	Message string
-	Points  int
+	Points  float64  
 }
 
 // hintItem is the scoring report representation of a hint, which can contain
@@ -57,7 +57,7 @@ type scoreItem struct {
 type hintItem struct {
 	Index    int
 	Messages []string
-	Points   int
+	Points   float64  
 }
 
 // config is a representation of the TOML configuration typically
